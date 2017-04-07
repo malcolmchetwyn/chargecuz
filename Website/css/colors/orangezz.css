@@ -1,0 +1,129 @@
+/* --------------------------------------
+=========================================
+COLOR : ORANGE
+MF
+MAIN COLOR CODE: #ea8825
+
+DEEP COLOR CODE: #AC5330
+=========================================
+----------------------------------------- */
+
+.color-overlay {
+    /* background: rgba(234, 136, 37,1); */   
+}
+
+.adjust {
+	margin-right: 10px;
+}
+
+.standard-button {
+    background: #184F55;
+}
+
+.standard-button3 {
+	background: #184F55;
+	background-color: #184F55;
+	border-color:#184F55;
+	border-radius: 3px;
+	padding: 15px 130px;
+	margin: 44px 0;
+	display: inline-block;
+	color: #fff !important;
+	transition: background-color 0.6s, box-shadow 0.6s, text-shadow 0.6s;
+	font-size: 20px;
+}
+
+a:hover.standard-button3 {
+			/*border: 2px solid #184F55 ;*/
+			color: #fff;
+			background-color: #032225 ;
+			border-color:#184F55;
+			box-shadow: 0px 0px 10px rgba(25,155, 168, 0.5);
+			text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+		}
+
+
+#top-logo{		  
+		background-image: url(../../images/charge_cuz_dude.png) !important;
+	background-size: 355px 493px;  
+	width: 355px;  
+	height: 493px;  
+	margin: 0 auto 0 auto;
+	margin-right: 170px;
+	/* box-shadow: inset 10px -8px 9px -7px rgba(0,0,0,0.4); */
+}
+	
+.standard-button {
+    background: #AC5330;
+}
+
+.standard-button2 {
+    background: #ea8825;
+}
+
+.standard-button2:hover {
+    background: #AC5330;
+}
+
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open .dropdown-toggle.btn-primary {
+    background: #AC5330;
+    border-color: inherit;
+}
+
+.colored-line,
+.colored-line-left {
+    background: #ea8825;
+}
+
+.main-color {
+    color: #ea8825;
+}
+
+.features .feature:hover .icon-container .icon {
+    background: #ea8825;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 0px 2px #ea8825;
+            box-shadow: 0px 0px 0px 2px #ea8825;
+}
+
+.features .feature .icon-container .icon {
+    border: 1px solid #ea8825;
+    color: #ea8825;
+}
+
+.feature-list li i {
+    color: #ea8825;
+}
+
+.services .single-service .service-icon,
+.services .single-service h3 {
+    color: #ea8825;
+}
+
+.screenshots .owl-theme .owl-controls .owl-page span {
+    background: #ea8825;
+}
+
+footer .contact-button {
+    border: 2px solid #ea8825;
+    color: #ea8825;
+}
+
+footer .contact-button:hover {
+    background: #ea8825;
+}
+
+footer .contact-box .expanded-contact-form .input-box:active,
+footer .contact-box .expanded-contact-form .textarea-box:active,
+footer .contact-box .expanded-contact-form .input-box:focus,
+footer .contact-box .expanded-contact-form .textarea-box:focus {
+    border: 1px solid #ea8825;
+}
+
+footer .social-icons li a:hover {
+    color: #ea8825;
+}

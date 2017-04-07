@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slider_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.shoppinghook.chargecuz.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:id="@+id/topLabelStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:text="@string/min_percentage"
+            android:textColor="@color/DigitsColor" />
+        
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="@dimen/barWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:layout_toRightOf="@id/topLabelStart"
+            android:max="99"
+            android:maxHeight="@dimen/barHeight"
+            android:minHeight="@dimen/barHeight"
+            android:progressDrawable="@drawable/custom_progress"
+            android:thumb="@drawable/btn_slider" />
+        
+        <TextView
+            android:id="@+id/topLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="0%"
+            android:textColor="@color/TopLabel"
+            android:textSize="30sp" />
+                
+        <TextView
+            android:id="@+id/topLabelEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:layout_toRightOf="@id/seekBar1"
+            android:text="@string/max_percentage"
+            android:textColor="@color/DigitsColor" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/topLabelEnd"
+            android:layout_marginLeft="@dimen/gap_margin"           
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/play_icon_unselect"
+            android:onClick="onTopClicked" />
+    </RelativeLayout>
+    
+    <TextView
+            android:id="@+id/topDisableLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INACTIVE"
+            android:textSize="12sp"
+            android:textColor="@color/White" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp" >
+
+        <TextView
+            android:id="@+id/centerLabelStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:text="@string/min_percentage"
+            android:textColor="@color/DigitsColor" />
+        
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="@dimen/barWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/centerLabelStart"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:max="99"
+            android:maxHeight="@dimen/barHeight"
+            android:minHeight="@dimen/barHeight"
+            android:progressDrawable="@drawable/custom_progress"
+            android:thumb="@drawable/btn_slider" />
+
+        <TextView
+            android:id="@+id/centerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="0%"
+            android:textColor="@color/CenterLabel"
+            android:textSize="30sp" />        
+
+        <TextView
+            android:id="@+id/centerLabelEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:layout_toRightOf="@id/seekBar2"
+            android:text="@string/max_percentage"
+            android:textColor="@color/DigitsColor" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/centerLabelEnd"
+            android:layout_marginLeft="@dimen/gap_margin"                     
+            android:layout_alignParentBottom="true"                  
+            android:background="@drawable/play_icon_unselect"
+            android:onClick="onCenterClicked" />
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/centerDisableLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INACTIVE"
+            android:textSize="12sp"
+            android:textColor="@color/White" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp" >
+        
+        <TextView
+            android:id="@+id/bottomLabelStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:text="@string/min_percentage"
+            android:textColor="@color/DigitsColor" />        
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="@dimen/barWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/bottomLabelStart"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:max="99"
+            android:maxHeight="@dimen/barHeight"
+            android:minHeight="@dimen/barHeight"
+            android:progressDrawable="@drawable/custom_progress"
+            android:thumb="@drawable/btn_slider" />
+
+        <TextView
+            android:id="@+id/bottomLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="0%"
+            android:textColor="@color/BottomLabel"
+            android:textSize="30sp" />
+
+        
+        <TextView
+            android:id="@+id/bottomLabelEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/gap_margin"
+            android:layout_toRightOf="@id/seekBar3"
+            android:text="@string/max_percentage"
+            android:textColor="@color/DigitsColor" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/bottomLabelEnd"
+            android:layout_marginLeft="@dimen/gap_margin"        
+            android:background="@drawable/play_icon_unselect"
+            android:onClick="onBottomClicked" />
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/bottomDisableLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INACTIVE"
+            android:textSize="12sp"
+            android:textColor="@color/White" />
+
+</LinearLayout>
